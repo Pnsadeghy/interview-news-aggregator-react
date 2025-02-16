@@ -1,5 +1,5 @@
-import {AUTH_TOKEN_COOKIE_KEY} from "@/shared/constants"
-import {NextRequest, NextResponse} from "next/server"
+import { NextRequest, NextResponse } from 'next/server'
+import { AUTH_TOKEN_COOKIE_KEY } from '@/shared/constants'
 
 export function middleware(request: NextRequest) {
     if (request.nextUrl.pathname.startsWith('/panel')) {
@@ -11,3 +11,7 @@ export function middleware(request: NextRequest) {
     }
     return NextResponse.next()
 }
+
+export const config = {
+    matcher: ['/panel/:path*'],
+};

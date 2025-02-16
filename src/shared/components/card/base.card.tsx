@@ -6,10 +6,10 @@ interface componentProps {
     footer?: React.ReactNode
 }
 
-export default function apiLoader({title, children, footer}: componentProps) {
+export default function BaseCard({title, children, footer}: componentProps) {
     return (
         <div className="bg-white rounded-2xl ring-1 ring-gray-200 p-4" >
-            {title && <h3 className="text-3xl font-semibold mb-6" >{title}</h3>}
+            {title && <h3 className="text-xl font-semibold mb-6" >{title}</h3>}
             <div>
                 {children}
             </div>

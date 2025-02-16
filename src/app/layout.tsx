@@ -1,7 +1,7 @@
 import {getLocale, getMessages} from 'next-intl/server'
 import {NextIntlClientProvider} from 'next-intl'
 import React from "react"
-import "./globals.css"
+import "./globals.scss"
 
 export default async function RootLayout({
   children,
