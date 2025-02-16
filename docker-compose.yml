@@ -6,4 +6,4 @@ services:
       context: .
       dockerfile: ./.deploy/Dockerfile.production
     ports:
-      - "3000:3000"
+      - '3000:3000'

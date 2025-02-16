@@ -1,5 +1,3 @@
 export default function ArticleAllPage() {
-    return (
-        <div>Profile</div>
-    )
+  return <div>Profile</div>;
 }

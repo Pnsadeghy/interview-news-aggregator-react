@@ -1,5 +1,5 @@
 enum BaseAlertThemeEnum {
-    Danger = "danger",
+  Danger = 'danger',
 }
 
-export default BaseAlertThemeEnum
+export default BaseAlertThemeEnum;

@@ -1,9 +1,9 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
-.alert{
-  @apply p-2 mb-4 rounded ring-1;
+.alert {
+  @apply mb-4 rounded p-2 ring-1;
 
-  &.danger{
-    @apply bg-red-100 text-red-500 text-sm ring-red-200;
+  &.danger {
+    @apply bg-red-100 text-sm text-red-500 ring-red-200;
   }
 }

@@ -4,12 +4,10 @@ export default function PanelLayout({
   children: React.ReactNode;
 }>) {
   return (
-      <div>
-          <h1>Panel</h1>
+    <div>
+      <h1>Panel</h1>
 
-          <div>
-              {children}
-          </div>
-      </div>
+      <div>{children}</div>
+    </div>
   );
 }
