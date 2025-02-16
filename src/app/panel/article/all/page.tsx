@@ -1,3 +1,3 @@
 export default function ArticleAllPage() {
-  return <div>Panel main</div>;
+  return <div>All articles</div>;
 }

@@ -74,7 +74,7 @@ export default function LoginForm({ onSuccess }: componentProps) {
           id='password'
           error={errors.password}
         >
-          <input {...register('password', passwordValidation)} />
+          <input type="password" {...register('password', passwordValidation)} />
         </BaseInputContainer>
 
         <BaseButton submit disabled={loading}>

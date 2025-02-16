@@ -87,6 +87,7 @@ export default function RegisterForm({ onSuccess }: componentProps) {
         <BaseInputContainer
           label={t('auth.password')}
           id='password'
+          type="password"
           error={errors.password}
         >
           <input {...register('password', passwordValidation)} />
@@ -94,6 +95,7 @@ export default function RegisterForm({ onSuccess }: componentProps) {
         <BaseInputContainer
           label={t('auth.password_confirmation')}
           id='password_confirmation'
+          type="password"
           error={errors.password_confirmation}
         >
           <input

@@ -1,0 +1,7 @@
+@import 'tailwindcss';
+
+.panel-layout_side_nav{
+  a, button{
+    @apply block w-full text-start px-4 py-2 text-sm border-b border-gray-300 hover:bg-gray-300 cursor-pointer;
+  }
+}

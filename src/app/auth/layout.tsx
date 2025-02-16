@@ -1,6 +1,6 @@
 import { useTranslations } from 'next-intl';
 
-export default function AuthLayout({
+export default function AppAuthLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
