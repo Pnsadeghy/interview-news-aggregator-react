@@ -11,6 +11,7 @@ const apiInstance = axios.create({
 
 apiInstance.interceptors.request.use(
     (config) => {
+        alert(process.env.NEXT_PUBLIC_API_BASE_URL)
         const token = Cookies.get(AUTH_TOKEN_COOKIE_KEY)
         if (token) {
             config.headers['Authorization'] = token

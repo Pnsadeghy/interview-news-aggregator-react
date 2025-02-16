@@ -1,4 +1,4 @@
-export default function articleAllPage() {
+export default function ArticleAllPage() {
     return (
         <div>Panel main</div>
     )

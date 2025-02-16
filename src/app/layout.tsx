@@ -1,4 +1,3 @@
-import { AuthProvider } from '@/modules/auth/auth.state'
 import {getLocale, getMessages} from 'next-intl/server'
 import {NextIntlClientProvider} from 'next-intl'
 import React from "react"
@@ -15,10 +14,9 @@ export default async function RootLayout({
   return (
     <html lang={locale}>
       <body>
+      <h1>Panel</h1>
           <NextIntlClientProvider messages={messages}>
-              <AuthProvider>
-                {children}
-              </AuthProvider>
+              {children}
           </NextIntlClientProvider>
       </body>
     </html>
