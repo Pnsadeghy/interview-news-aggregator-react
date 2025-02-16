@@ -1,5 +1,9 @@
+import {useTranslations} from 'next-intl'
+
 export default function Home() {
+  const t = useTranslations('common')
+
   return (
-    <div>Home</div>
+    <div>{t('title')}</div>
   );
 }
