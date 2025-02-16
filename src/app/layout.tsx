@@ -13,8 +13,7 @@ export default async function RootLayout({
 
   return (
     <html lang={locale}>
-      <body>
-      <h1>Panel</h1>
+      <body className="bg-gray-100" >
           <NextIntlClientProvider messages={messages}>
               {children}
           </NextIntlClientProvider>

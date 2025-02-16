@@ -1,7 +1,7 @@
 import React from "react"
 
 interface componentProps {
-    children: React.ReactNode;
+    children: React.ReactNode
 }
 
 export default function apiLoader({children}: componentProps) {

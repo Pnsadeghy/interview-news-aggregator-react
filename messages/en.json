@@ -1,5 +1,13 @@
 {
   "common": {
     "title": "Website title"
+  },
+  "login": {
+    "title": "Sign in",
+    "link": "Already have an account?"
+  },
+  "register": {
+    "title": "Sign up",
+    "link": "Not registered yet?"
   }
 }
