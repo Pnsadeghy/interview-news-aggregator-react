@@ -1,5 +1,7 @@
+import { AuthProvider } from '@/modules/auth/auth.state'
 import {getLocale, getMessages} from 'next-intl/server'
 import {NextIntlClientProvider} from 'next-intl'
+import React from "react"
 import "./globals.css"
 
 export default async function RootLayout({
@@ -14,7 +16,9 @@ export default async function RootLayout({
     <html lang={locale}>
       <body>
           <NextIntlClientProvider messages={messages}>
-              {children}
+              <AuthProvider>
+                {children}
+              </AuthProvider>
           </NextIntlClientProvider>
       </body>
     </html>

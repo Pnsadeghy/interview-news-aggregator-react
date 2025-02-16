@@ -5,7 +5,11 @@ const withNextIntl = createNextIntlPlugin();
 
 const nextConfig: NextConfig = {
     output: 'export',
-  /* config options here */
+    env: {
+        AUTH_LOGIN_API: 'auth/login',
+        AUTH_REGISTER_API: 'auth/register',
+        AUTH_LOGOUT_API: 'auth/logout'
+    }
 };
 
 export default withNextIntl(nextConfig);
