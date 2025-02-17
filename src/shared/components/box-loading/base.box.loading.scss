@@ -1,0 +1,9 @@
+@import 'tailwindcss';
+
+.box-loading {
+  @apply relative opacity-90;
+  &:after {
+    content: '';
+    @apply absolute start-0 top-0 z-10 h-full w-full cursor-wait;
+  }
+}

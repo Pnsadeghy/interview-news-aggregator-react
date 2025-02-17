@@ -1,0 +1,9 @@
+@import 'tailwindcss';
+
+.alert {
+  @apply mb-4 rounded p-2 ring-1;
+
+  &.danger {
+    @apply bg-red-100 text-sm text-red-500 ring-red-200;
+  }
+}

@@ -1,0 +1,7 @@
+@import 'tailwindcss';
+
+.input-container {
+  input {
+    @apply block h-8 w-full rounded px-2 ring-1 ring-gray-200;
+  }
+}

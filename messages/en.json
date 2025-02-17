@@ -1,0 +1,63 @@
+{
+  "common": {
+    "title": "News aggregator",
+    "search": "Search...",
+    "loading": "Loading..."
+  },
+  "login": {
+    "title": "Sign in",
+    "link": "Already have an account?",
+    "button": "Login"
+  },
+  "register": {
+    "title": "Sign up",
+    "link": "Not registered yet?",
+    "button": "Register"
+  },
+  "auth": {
+    "name": "Your name",
+    "email": "Your email",
+    "password": "Your password",
+    "password_confirmation": "Confirm your password",
+    "logout": "Logout"
+  },
+  "messages": {
+    "update": "Your changes saved successfully!"
+  },
+  "validation": {
+    "required": "This field in required!",
+    "email": "Email is not valid!",
+    "minLength": "Minimum length is {length}",
+    "passwordMismatch": "Passwords do not match"
+  },
+  "button": {
+    "save": "Save",
+    "load_more": "Load more"
+  },
+  "user": {
+    "article": {
+      "all": {
+        "link": "All articles"
+      },
+      "feed": "Your feed"
+    },
+    "feed": {
+      "config": {
+        "load": "Getting your configs...",
+        "link": "Customize your feed"
+      }
+    }
+  },
+  "news_source": {
+    "list": "News sources"
+  },
+  "author": {
+    "list": "Authors"
+  },
+  "category": {
+    "list": "Categories"
+  },
+  "article": {
+    "load": "Getting articles..."
+  }
+}

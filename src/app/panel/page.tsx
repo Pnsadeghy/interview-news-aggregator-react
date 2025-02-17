@@ -1,11 +1,15 @@
-import ArticleList from "@/modules/article/components/list/article.list"
+import ArticleList from '@/modules/article/components/list/article.list';
+import BasePanelLayoutPage from '@/shared/components/panel-layout/base.panel.layout.page';
+import { useTranslations } from 'next-intl';
 
-export default function panelMainPage() {
-    return (
-        <div>
-            <h2>Dashboard</h2>
+export default function PanelMainPage() {
+  const t = useTranslations();
 
-            <ArticleList />
-        </div>
-    )
+  const apiUrl = process.env.USER_FEED_ARTICLES_LIST_API;
+
+  return (
+    <BasePanelLayoutPage title={t('user.article.feed')}>
+      <ArticleList apiUrl={apiUrl!} />
+    </BasePanelLayoutPage>
+  );
 }
