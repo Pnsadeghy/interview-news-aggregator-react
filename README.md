@@ -1,24 +1,23 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# React (Next 15) News Application
 
-## Getting Started
+This application is built with React (Next 15) and designed to provide users with a personalized news experience.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Aggregates News**: Automatically retrieves news from multiple sources such as popular news sites or APIs.
+- **Personalized Feeds**: Users can set up their own news feeds, selecting which sources and topics to include.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Installation
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Clone this repository
+2. Navigate to the project directory
+3. Create .env file from .env.example and set api url correctly
+4. Run docker compose command
+    1. Deploy: `docker compose up --build -d`
+    2. Local: `docker compose -f docker-compose.local.yml up --build -d`
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Url
+- Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 ## Learn More
 
