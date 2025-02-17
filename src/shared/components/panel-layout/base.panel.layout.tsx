@@ -21,7 +21,7 @@ export default function BasePanelLayout({children, side}: componentProps) {
 
     return (
         <div className="lg:flex lg:h-screen items-stretch relative">
-            <aside className={'lg:static fixed top-0 h-full w-64 bg-gray-200 border-e border-gray-300 z-30 ' + sidebarClass}>
+            <aside className={'lg:static flex-shrink-0 fixed top-0 h-full w-64 bg-gray-200 border-e border-gray-300 z-30 lg:transition-none transition-all duration-700 ' + sidebarClass}>
                 {side}
             </aside>
             <section className="grow">

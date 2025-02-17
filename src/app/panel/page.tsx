@@ -5,9 +5,11 @@ import {useTranslations} from "next-intl";
 export default function PanelMainPage() {
   const t = useTranslations();
 
+  const apiUrl = process.env.USER_FEED_ARTICLES_LIST_API;
+
   return (
     <BasePanelLayoutPage title={t('user.article.feed')}>
-        <ArticleList />
+        <ArticleList apiUrl={apiUrl!} />
     </BasePanelLayoutPage>
   );
 }
