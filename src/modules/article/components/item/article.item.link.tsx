@@ -12,7 +12,7 @@ export default function ArticleItemLink({href, children}: componentProps) {
     return (
         <div>
             {href
-                ? (<a href={href} className={className + 'hover:bg-gray-500 transition'} >{children}</a>)
+                ? (<a target="_blank" href={href} className={className + ' hover:bg-gray-500 transition'} >{children}</a>)
                 : (<span className={className}>{children}</span>)}
         </div>
     )

@@ -35,6 +35,7 @@ export default function LoginForm({ onSuccess }: componentProps) {
     required: true,
     ...getEmailValidation(t('validation.email')),
   };
+
   const passwordValidation = {
     required: true,
     minLength: {

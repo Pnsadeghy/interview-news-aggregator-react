@@ -29,7 +29,7 @@ export default function BasePanelLayout({children, side}: componentProps) {
             </section>
             <button onClick={handleToggleNav}
                     type="button"
-                    className="lg:hidden fixed cursor-pointer flex items-center justify-center top-0 start-0 h-16 w-16 text-gray-600" >
+                    className="lg:hidden fixed cursor-pointer flex items-center justify-center top-0 start-0 h-16 w-16 text-gray-600 z-10" >
                 <BaseIconNav className="h-10" />
             </button>
             {showSidebar && <button onClick={handleToggleNav}

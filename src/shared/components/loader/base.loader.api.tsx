@@ -7,6 +7,7 @@ interface componentProps {
     apiAction: () => Promise<unknown>;
     children: React.ReactNode;
     loader: React.ReactNode;
+    loading?: boolean;
 }
 
 enum Status {
@@ -15,7 +16,7 @@ enum Status {
     Failed
 }
 
-export default function BaseLoaderApi({apiAction, children, loader}: componentProps) {
+export default function BaseLoaderApi({apiAction, children, loader, loading}: componentProps) {
 
     const [status, setStatus] = useState<Status>(Status.Loading);
     const [loaded, setLoaded] = useState<boolean>(false);
@@ -36,7 +37,7 @@ export default function BaseLoaderApi({apiAction, children, loader}: componentPr
 
     return (
         <BaseLoader loader={loader}
-                    loading={status === Status.Loading}
+                    loading={status === Status.Loading || loading}
                     loaded={loaded}
                     failed={!loaded && status === Status.Failed}
                     tryAgainAction={callApi}>
