@@ -7,7 +7,7 @@ import { getApiCallErrorMessage } from '@/shared/utils/api.utils';
 import useAuthStore from '@/modules/auth/stores/auth.store';
 import { useForm, SubmitHandler } from 'react-hook-form';
 import { useTranslations } from 'next-intl';
-import { useState } from 'react';
+import { useCallback, useState } from 'react';
 
 interface componentProps {
   onSuccess: () => void;
@@ -44,19 +44,22 @@ export default function LoginForm({ onSuccess }: componentProps) {
     },
   };
 
-  const onSubmit: SubmitHandler<Inputs> = async (data) => {
-    setLoading(true);
-    setError('');
+  const onSubmit: SubmitHandler<Inputs> = useCallback(
+    async (data) => {
+      setLoading(true);
+      setError('');
 
-    try {
-      await login(data);
-      onSuccess();
-    } catch (error: unknown) {
-      setError(getApiCallErrorMessage(error));
-    } finally {
-      setLoading(false);
-    }
-  };
+      try {
+        await login(data);
+        onSuccess();
+      } catch (error: unknown) {
+        setError(getApiCallErrorMessage(error));
+      } finally {
+        setLoading(false);
+      }
+    },
+    [onSuccess, login],
+  );
 
   return (
     <BaseBoxLoading loading={loading}>
@@ -75,7 +78,10 @@ export default function LoginForm({ onSuccess }: componentProps) {
           id='password'
           error={errors.password}
         >
-          <input type="password" {...register('password', passwordValidation)} />
+          <input
+            type='password'
+            {...register('password', passwordValidation)}
+          />
         </BaseInputContainer>
 
         <BaseButton submit disabled={loading}>

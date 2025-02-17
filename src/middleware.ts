@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import { AUTH_TOKEN_COOKIE_KEY } from '@/shared/constants';
 
 export function middleware(request: NextRequest) {
-  const { pathname } = request.nextUrl
+  const { pathname } = request.nextUrl;
 
   if (pathname.startsWith('/panel') && !authTokenIsValid(request)) {
     return NextResponse.redirect(new URL('/auth/login', request.url));
@@ -20,4 +20,5 @@ export const config = {
   matcher: ['/:path*'],
 };
 
-const authTokenIsValid = (req: NextRequest) => !!req.cookies.get(AUTH_TOKEN_COOKIE_KEY)
+const authTokenIsValid = (req: NextRequest) =>
+  !!req.cookies.get(AUTH_TOKEN_COOKIE_KEY);

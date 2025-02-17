@@ -1,6 +1,6 @@
-import PanelLayoutSide from "@/app/panel/components/layout-side/panel.layout.side";
-import BasePanelLayout from "@/shared/components/panel-layout/base.panel.layout";
-import React from "react";
+import PanelLayoutSide from '@/app/panel/components/layout-side/panel.layout.side';
+import BasePanelLayout from '@/shared/components/panel-layout/base.panel.layout';
+import React from 'react';
 
 export default function AppPanelLayout({
   children,
@@ -8,8 +8,6 @@ export default function AppPanelLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <BasePanelLayout side={<PanelLayoutSide />} >
-        {children}
-    </BasePanelLayout>
+    <BasePanelLayout side={<PanelLayoutSide />}>{children}</BasePanelLayout>
   );
 }

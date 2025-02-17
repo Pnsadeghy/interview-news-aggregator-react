@@ -1,6 +1,8 @@
 {
   "common": {
-    "title": "News aggregator"
+    "title": "News aggregator",
+    "search": "Search...",
+    "loading": "Loading..."
   },
   "login": {
     "title": "Sign in",
@@ -19,11 +21,18 @@
     "password_confirmation": "Confirm your password",
     "logout": "Logout"
   },
+  "messages": {
+    "update": "Your changes saved successfully!"
+  },
   "validation": {
     "required": "This field in required!",
     "email": "Email is not valid!",
     "minLength": "Minimum length is {length}",
     "passwordMismatch": "Passwords do not match"
+  },
+  "button": {
+    "save": "Save",
+    "load_more": "Load more"
   },
   "user": {
     "article": {
@@ -34,8 +43,21 @@
     },
     "feed": {
       "config": {
+        "load": "Getting your configs...",
         "link": "Customize your feed"
       }
     }
+  },
+  "news_source": {
+    "list": "News sources"
+  },
+  "author": {
+    "list": "Authors"
+  },
+  "category": {
+    "list": "Categories"
+  },
+  "article": {
+    "load": "Getting articles..."
   }
 }

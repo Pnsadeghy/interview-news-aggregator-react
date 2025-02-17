@@ -5,16 +5,16 @@ import { useRouter } from 'next/navigation';
 import { useTranslations } from 'next-intl';
 import RegisterForm from './form';
 import Link from 'next/link';
-import React from 'react';
+import React, { useCallback } from 'react';
 
 export default function RegisterPage() {
   const t = useTranslations();
 
   const router = useRouter();
 
-  const handleRegisterSuccess = () => {
+  const handleRegisterSuccess = useCallback(() => {
     router.push('/panel');
-  };
+  }, [router]);
 
   return (
     <BaseCard

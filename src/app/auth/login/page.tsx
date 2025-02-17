@@ -5,16 +5,16 @@ import LoginForm from '@/app/auth/login/form';
 import { useRouter } from 'next/navigation';
 import { useTranslations } from 'next-intl';
 import Link from 'next/link';
-import React from 'react';
+import React, { useCallback } from 'react';
 
 export default function LoginPage() {
   const t = useTranslations();
 
   const router = useRouter();
 
-  const handleLoginSuccess = () => {
+  const handleLoginSuccess = useCallback(() => {
     router.push('/panel');
-  };
+  }, [router]);
 
   return (
     <BaseCard

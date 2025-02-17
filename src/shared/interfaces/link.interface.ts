@@ -1,4 +1,4 @@
 export default interface LinkInterface {
-    path: string;
-    label: string;
+  path: string;
+  label: string;
 }

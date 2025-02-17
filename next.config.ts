@@ -14,7 +14,7 @@ const nextConfig: NextConfig = {
     USER_FEED_CONFIG_UPDATE_API: 'user/userFeed/config',
     USER_CATEGORIES_LIST_API: 'user/categories',
     USER_NEWS_SOURCES_LIST_API: 'user/newsSources',
-    USER_AUTHORS_LIST_API: 'user/authors'
+    USER_AUTHORS_LIST_API: 'user/authors',
   },
 };
 
